@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelkaType</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+
+<style> 
+
+header{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .Header{
+        position: relative;
+        height: 40px;
+        background-color: rgb(1, 4, 17);
+        border-bottom-style: ridge;
+        border-bottom-color:rgba(255, 255, 255, 0.096);
+        
+        
+    }
+
+    .TextBelka{
+        display: flex;
+        justify-content: center;
+        position: relative;       
+    }
+
+
+    .TestPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-top: -33px;
+        margin-right: 30px;
+    }
+
+    .PersonPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin: 15px;
+        margin-top: -33px;
+        margin-right: 50px;
+    }
+    .PersonPage-icon{
+        color: white;
+    }
+    .PersonPage-icon:hover{
+        color: rgb(255, 81, 0);
+        
+    }
+    .PersonPage-icon:focus{
+        color: rgb(255, 153, 0);
+        
+    }
+
+    .LavelPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin: 15px;
+        margin-top: -33px;
+        margin-right: 100px;
+    }
+
+
+    .HomePage{
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin: 15px;
+        margin-top: -33px;
+        margin-left: 50px;
+    }
+    .HomePage-icon{
+        color: white;
+    }
+    .HomePage-icon:hover{
+        color: rgb(255, 81, 0);
+        
+    }
+    .HomePage-icon:focus{
+        color: rgb(255, 153, 0);
+        
+    }   
+    
+    body{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(28, 31, 63);
+}  
+
+	.Btn{
+		border: none;
+		position: relative;
+		display: flex;	
+		justify-content: center;
+		background-color: rgb(255, 255, 255);
+		color:rgb(65, 65, 65);
+		font-family: Arial, Helvetica, sans-serif;
+		text-decoration: none;
+		font-weight: bold;
+		letter-spacing: 3px; 	
+		padding: 5px;
+	}
+	.Btn:hover{
+		border: none;
+		background-color:rgb(255, 81, 0) ;
+		color: white;
+	}
+	.Btn:active{
+		border:none;
+		color: white;
+		background-color: rgb(255, 0, 0);
+		
+	}
+	.Btn:focus{
+		border:none;
+		outline: none;
+		color: white;
+		background-color: rgb(255, 153, 0);
+		box-shadow: 0 0 0 2px rgb(255, 255, 255);
+	}       
+</style>
+
+
+<body>
+    <header>
+        <div class="Header">
+            <div class="conteiner">
+                <div class="TextBelka">
+                    <a>
+                        <img src="Images/icon.png" width="150" height="40">
+                    </a>          
+                </div>
+        
+            <div class="icons">
+                <div class="HomePage">
+                    <a style="text-align:center" href="index.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>                   
+                    </a>
+                </div>
+        
+
+                <div class="TestPage">
+                    <a style="text-align:center" href="Test.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+                            <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                            <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+                          </svg>                  
+                    </a>
+                </div>
+
+                <div class="LavelPage">
+                    <a style="text-align:center" href="Lavels.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                            <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                            <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                          </svg>                   
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <!-- Logo and Results -->
+		<div class="container">
+			<!-- Results -->
+			<div class="results">
+				<div class="indicators">
+					<div class="indicator">
+						<div class="indicator__icon">
+							<i class="fas fa-tachometer-alt"></i>
+						</div>
+						<div class="indicator__name">Символов в минуту:</div>
+						<div class="indicator__value" id="symbolsPerMinute">0</div>
+					</div>
+					
+					<div class="indicator">
+						<div class="indicator__icon indicator__icon--errors">
+							<i class="fas fa-exclamation-circle"></i>
+						</div>
+						<div class="indicator__name">Ошибок:</div>
+						<div class="indicator__value" id="errorPercent">0</div>
+					</div>
+				</div>
+			</div>
+			<!-- // Results -->
+		</div>
+		<!-- // Logo and Results -->
+
+		<div class="devider"></div>
+
+		<div class="container">
+			<!-- Input field -->
+			<form action="">
+				<input
+					id="input"
+					type="text"
+					class="input unselectable"
+					placeholder="Поле для ввода текста"
+					value=""
+                    autocomplete="off"
+					autofocus="on"
+					size="500px"
+				/>
+			</form>
+			<!-- // Input field -->
+
+			<!-- Text -->
+			<!-- <div class="text error"> -->
+			<div class="text" id="textExample">
+				<div class="line line-1">
+					<span class="done"> </span>
+					<span class="hint"></span>
+				</div>
+
+				<div class="line">
+					<div class="conteinerForLine">
+					</div>
+			    </div>
+            </div>
+			<!-- // Text  -->
+
+			<!-- Keyboard -->
+			<div class="keyboard">
+				<div class="line">
+					<div id="letter_ё"data-letters="Ёё">Ё</div>
+					<div id="letter_1" data-letters="1">1</div>
+					<div id="letter_2" data-letters="2">2</div>
+					<div id="letter_3" data-letters="3">3</div>
+					<div id="letter_4" data-letters="4">4</div>
+					<div id="letter_5" data-letters="5">5</div>
+					<div id="letter_6" data-letters="6">6</div>
+					<div id="letter_7" data-letters="7">7</div>
+					<div id="letter_8" data-letters="8">8</div>
+					<div id="letter_9" data-letters="9">9</div>
+					<div id="letter_0" data-letters="0">0</div>
+					<div id="letter_minus" data-letters="-">-</div>
+					<div id="letter_plus" data-letters="+=">+=</div>
+					<div class="backspace" id="letter_backspace" data-spec="backspace">Backspace</div>
+				</div>
+				<div class="line">
+					<div class="tab" id="letter_tab" data-spec="tab">Tab</div>
+					<div id="letter_й"data-letters="Йй">Й</div>
+					<div id="letter_ц"data-letters="Цц">Ц</div>
+					<div id="letter_у"data-letters="Уу">У</div>
+					<div id="letter_к"data-letters="Кк">К</div>
+					<div id="letter_е"data-letters="Ее">Е</div>
+					<div id="letter_н"data-letters="Нн">Н</div>
+					<div id="letter_г"data-letters="Гг">Г</div>
+					<div id="letter_ш"data-letters="Шш">Ш</div>
+					<div id="letter_щ"data-letters="Щщ">Щ</div>
+					<div id="letter_з"data-letters="Зз">З</div>
+					<div id="letter_х"data-letters="Хх">Х</div>
+					<div id="letter_ъ"data-letters="Ъъ">Ъ</div>
+					<div id="letter_slash" data-letters="\">\</div>
+				</div>
+				<div class="line">
+					<div class="caps" id="letter_capslock" data-spec="capslock">Caps Lock</div>
+					<div id="letter_ф" data-letters="Фф">Ф</div>
+					<div id="letter_ы" data-letters="ыЫ">Ы</div>
+					<div id="letter_в" data-letters="Вв">В</div>
+					<div id="letter_а" data-letters="Аа">А</div>
+					<div id="letter_п" data-letters="Пп">П</div>
+					<div id="letter_р" data-letters="Рр">Р</div>
+					<div id="letter_о" data-letters="Оо">О</div>
+					<div id="letter_л" data-letters="Лл">Л</div>
+					<div id="letter_д" data-letters="Дд">Д</div>
+					<div id="letter_ж" data-letters="Жж">Ж</div>
+					<div id="letter_э" data-letters="Ээ">Э</div>
+					<div class="enter" id="letter_enter" data-spec="enter">Enter</div>
+				</div>
+				<div class="line">
+					<div class="shift" data-spec="shift">Shift</div>
+					<div id="letter_я" data-letters="Яя">Я</div>
+					<div id="letter_ч" data-letters="Чч">Ч</div>
+					<div id="letter_с" data-letters="Сс">С</div>
+					<div id="letter_м" data-letters="Мм">М</div>
+					<div id="letter_и" data-letters="Ии">И</div>
+					<div id="letter_т" data-letters="Тт">Т</div>
+					<div id="letter_ь" data-letters="Ьь">Ь</div>
+					<div id="letter_б" data-letters="Бб">Б</div>
+					<div id="letter_ю" data-letters="Юю">Ю</div>
+					<div id="letter_dot" data-letters=".,">. <sup>,</sup></div>
+					<div class="shift" data-spec="shift">Shift</div>
+				</div>
+				<div class="line">
+					<div class="space" id="letter_space" data-spec="space"> </div>
+					<div class="alt" id="letter_alt" data-spec="alt">Alt</div>
+				</div>
+			</div>
+			<!-- // Keyboard -->
+		</div>
+
+		<a style="text-align:center" href="Lavels.html" class="Btn">Вернуться к уровням</a>
+
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="popUp.js"></script>
+    </div>            
+</body>
+</html>
+
+

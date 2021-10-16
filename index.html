@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelkaType</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+
+<style> 
+
+header{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .Header{
+        position: relative;
+        height: 40px;
+        background-color: rgb(1, 4, 17);
+        border-bottom-style: ridge;
+        border-bottom-color:rgba(255, 255, 255, 0.096);
+        
+        
+    }
+
+    .TextBelka{
+        display: flex;
+        justify-content: center;
+        position: relative;       
+    }
+
+
+    .TestPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin-top: -33px;
+        margin-right: 30px;
+    }
+
+    .PersonPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin: 15px;
+        margin-top: -33px;
+        margin-right: 50px;
+    }
+    .PersonPage-icon{
+        color: white;
+    }
+    .PersonPage-icon:hover{
+        color: rgb(255, 81, 0);
+        
+    }
+    .PersonPage-icon:focus{
+        color: rgb(255, 153, 0);
+        
+    }
+
+    .LavelPage{
+        display: inline-block;
+        position: relative;
+        float: right;
+        margin: 15px;
+        margin-top: -33px;
+        margin-right: 100px;
+    }
+
+
+    .HomePage{
+        display: inline-block;
+        position: relative;
+        float: left;
+        margin: 15px;
+        margin-top: -33px;
+        margin-left: 50px;
+    }
+    .HomePage-icon{
+        color: white;
+    }
+    .HomePage-icon:hover{
+        color: rgb(255, 81, 0);
+        
+    }
+    .HomePage-icon:focus{
+        color: rgb(255, 153, 0);
+        
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(28, 31, 63);
+    }    
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        margin: 0;
+        margin-left: -100%;
+        margin-top: 40px;
+        background-color: rgba(255, 255, 255, 0.192);    
+        background-image: url("Images/gif1.gif");    
+        border-style:ridge;
+        border-color: rgba(255, 255, 255, 0.514);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .Text{
+        margin-top: 25%;
+    }
+
+    .Text1{
+        font-size: 40px;
+        color: rgb(255, 141, 96);
+        margin-top: -10px;
+        letter-spacing: 3px;
+    }
+
+    .Text2{
+        position: center;
+        color: white;
+        letter-spacing: 3px;
+        margin-top: 40px;
+    }
+    
+    .Text3{
+        position: center;
+        color: white;
+        letter-spacing: 3px;
+        margin-top: 20px;
+    }
+
+
+    .btn{
+        border: none;
+        position: relative;
+        display: flex;	
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        color:rgb(65, 65, 65);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 3px; 
+        margin-top: 60px;
+        
+    }
+    .btn:hover{
+        border: none;
+        background-color:rgb(255, 81, 0) ;
+    }
+    .btn:active{
+        border:none;
+        background-color: rgb(255, 0, 0);
+    }
+    .btn:focus{
+        border:none;
+        outline: none;
+        background-color: rgb(255, 153, 0);
+        box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    }        
+    
+    
+    .Rools{
+        margin-left:50px;
+        margin-right: 50px;
+    }
+    
+    .Teory{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-left: -100%;
+        margin-top: 35%;
+    }
+    .Text-teory{
+        width: 80%;
+        margin-top: 15%;
+        position:relative;
+        background-color: rgba(0, 0, 0, 0.486);
+        border-radius: 5px;
+    }
+
+    .Text-teory-befor{
+        position: relative;
+        margin-top: 40px;
+        color: rgb(255, 255, 255);
+        letter-spacing: 3px;
+    }
+
+    .Text-teory1{
+        position: relative;
+        color: rgb(255, 127, 77);
+        letter-spacing: 3px;
+    }
+
+    .Text-teory2{
+        color: rgb(255, 127, 77);
+        letter-spacing: 3px;
+    }
+
+    .What-is{
+        margin:50px;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .Poz{
+        border-style:dashed;
+        border-right: none;
+        border-left: none;
+        border-color: rgba(255, 255, 255, 0.247);
+        margin: 20px;
+    }
+    .Text-teory3{
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    .img-poz{
+        float: right;
+        margin-top: -270px;
+        margin-right: 20px;       
+    }
+
+
+    .Isxod-poz{
+        border-style:dashed;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-color: rgba(255, 255, 255, 0.247);
+        margin: 20px;
+    }
+    
+    .img-isxod-poz{
+        display: block;
+        margin: 0 auto;      
+        
+    }
+
+    .Sxema{
+        margin:20px;
+        border-style: dashed;
+        border-top:none;
+        border-right: none;
+        border-left: none;
+        border-color: rgba(255, 255, 255, 0.247)
+    }
+
+    .img-keyboard{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .Text-teory-begin{
+        margin-top: -30px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 12px;
+        color:rgba(255, 255, 255, 0.308)
+    }
+
+    .Motion{
+        margin-left: 30px;
+        border-style: dashed;
+        border-top:none;
+        border-left:none;
+        border-right: none;
+        border-color: rgba(255, 255, 255, 0.247);
+    }
+
+    .Speed{
+        margin-left: 30px;
+        border-style: dashed;
+        border-top:none;
+        border-left:none;
+        border-right: none;
+        border-color: rgba(255, 255, 255, 0.247);
+    }
+
+    .Care{
+        margin-left: 30px;
+    }
+
+    .btn-primary-last{
+        margin:50px;
+    }
+    
+    .btn-primary-last:hover{
+        color:rgb(255, 255, 255);
+    }
+
+</style>
+
+
+<body>
+
+    <header>
+        <div class="Header">
+            <div class="conteiner">
+                <div class="TextBelka">
+                    <a>
+                        <img src="Images/icon.png" width="150" height="40">
+                    </a>          
+                </div>
+        
+            <div class="icons">
+                <div class="HomePage">
+                    <a style="text-align:center" href="index.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>                   
+                    </a>
+                </div>
+        
+
+                <div class="TestPage">
+                    <a style="text-align:center" href="Test.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+                            <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                            <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+                          </svg>                  
+                    </a>
+                </div>
+
+                <div class="LavelPage">
+                    <a style="text-align:center" href="Lavels.html" class="HomePage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                            <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                            <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                          </svg>                   
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div class="Head">
+                <div class="Text">
+                    <p><h3 align="center" class="Text1">Лучший клавиатурный тренажер</h3></p>
+                    <p><h5 align="center"  class="Text2">Не теряй времени зря!</h5></p>
+                    <p><h6 align="center" class="Text3">Печатай и выбирай фильм для просмотра ОДНОВРЕМЕННО!!!</h6></p>
+                </div>
+
+                <div class="Btn">
+                    <a style="text-align:center" href="Lavels.html" class="btn btn-primary">Начать</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Teory">
+            <div class="Text-teory">
+                <div class="Text-teory1">
+                    <p><h2 align="center" class="Text-teory1">Как говориться, без теории далеко не уедешь!</h2></p>
+                </div>
+
+                <div class="Text-teory-befor">
+                    <p><h5 align="center" class="Text-teory-befor">Перед тем, как преступить к работе необходимо выучить несколько легких, но обязательных правил</h5></p>
+                </div>
+
+                <div class="Rools">
+                    <p><h6 align="center" class="What-is">Главная идея слепой печати в том, что за каждым пальцем закреплена своя зона клавиш. Это позволяет печатать не глядя на клавиатуру. Регулярно тренируйся и, благодаря мышечной памяти, все твои десять пальцев будут знать, куда нажать.</h6></p>
+                    <div class="Poz">
+                        <p><h5 align="center" class="Text-teory2">1. Поза при печати</h5></p>
+                        <p><h6 align="left" class="Text-teory3">
+                            <ul>
+                                <li>Сиди ровно и держи спину прямой.</li><br>
+                                <li>Локти держи согнутыми под прямым углом.</li><br>
+                                <li>Голова должна быть немного наклонена вперед.</li><br>
+                                <li>Расстояние от глаз до экрана должно быть 45-70 см.</li><br>
+                                <li>Расслабь мышцы плеч, рук и кистей. </li><br>
+                                <li>Кисти могут немного касаться стола в нижней части клавиатуры, но не переноси
+                                вес тела на руки, чтобы не перенапрягать кисти.</li>
+                                <img src="Images/poz.jpg" class="img-poz" height="220" width="210" alt="...">
+                            </ul>
+                        </h6></p>
+                    </div>
+
+                    <div class="Isxod-poz">
+                        <p><h5 align="center" class="Text-teory2">2. Исходная позиция</h5></p>
+                        <p><h6 align="left" class="Teory3">
+                            <p><h6 align="left" class="Text-teory3">Немного согни пальцы и положи их на клавиши ФЫВА и ОЛДЖ, которые находятся в среднем ряду. Эта строка называется ОСНОВНОЙ СТРОКОЙ, потому что ты всегда будешь начинать с этих клавиш и возвращаться к ним.</h6></p>
+                            <img src="Images/isxodPoz.png" class="img-isxod-poz" width="500" height="150" alt="...">
+                            <p><h6 align="left" class="Text-teory3">На клавишах А и О, под указательными пальцами, находятся небольшие выступы. Они позволяют ориентироваться на клавиатуре вслепую.</h6></p>
+                        </h6></p>
+                    </div>
+
+                    <div class="Sxema">
+                        <p><h5 align="center" class="Text-teory2">3. Схема клавиатуры</h5></p>
+                        <p><h6 align="center" class="Text-teory3">Цвет клавиш на этой клавиатуре поможет тебе понять и запомнить, каким пальцем на какую клавишу нужно нажимать.</h6></p>
+                        <img src="Images/keyboard.png" class="img-keyboard" width="800" height="320" alt="...">
+                        <p><h6 align="left" class="Text-teory3">
+                            <ul>
+                                <li>Нажимай клавиши только тем пальцем, который для них предназначен.</li><br>
+                                <li>Всегда возвращай пальцы в исходную позицию «ФЫВА – ОЛДЖ».</li><br>
+                                <li>Когда набираешь текст, представляй расположение клавиш.</li><br>
+                                <li>Установи ритм и соблюдай его, пока печатаешь. Нажимай на клавиши с одинаковым интервалом.</li><br>
+                                <li>Клавишу SHIFT всегда нажимает мизинец с противоположной стороны от нужной буквы.</li><br>
+                                <li>Пробел отбивай большим пальцем левой или правой руки, как тебе удобнее.</li><br><br>
+                            </ul>
+
+                            <p align="center" class="Text-teory-begin">Сначала такой метод печати может показаться неудобным. Но не останавливайся. Со временем все будет получаться быстро, легко и удобно. Чтобы добиться максимального результата, выбирай курс слепой печати для твоей раскладки клавиатуры и на нужном языке.</p>
+                        </h6></p>
+                    </div>
+
+                    <div class="Motion">
+                        <p><h5 align="center" class="Text-teory2">4. Движение пальцев</h5></p>
+                        <p><h6 align="left" class="Text-teory3">Не подглядывай на клавиатуру во время печати. Просто скользи пальцами по клавишам, пока не найдешь основную строку.
+                            <br><br>Ограничь движение кистей и пальцев до минимума, только чтобы нажимать нужные клавиши. Держи руки и пальцы как можно ближе к исходной позиции. Это увеличит скорость набора текста и снизит нагрузку на кисти.
+                            <br><br>Следи за безымянными пальцами и мизинцами, так как они часто остаются незадействованными.
+                        </h6></p>
+                    </div>
+
+                    <div class="Speed">
+                        <p><h5 align="center" class="Text-teory2">5. Скорость печати</h5></p>
+                        <p><h6 align="left" class="Text-teory3">
+                            <ul>
+                                <li>Не пытайся сразу печатать со скоростью света. Начинай ускоряться, только когда все 10 пальцев привыкнут нажимать правильные клавиши.</li>
+                                <br><li>Не торопись когда печатаешь, чтобы избежать ошибок. Скорость будет возрастать постепенно.</li>
+                                <br><li>Всегда просматривай текст на одно-два слова вперед.</li>
+                                <br><li>Пройди все уроки на клавиатурном тренажере Ratatype. И твоя скорость станет выше средней скорости печати.</li>
+                            </ul>
+                        </h6></p>
+                    </div>
+
+                    <div class="Care">
+                        <p><h5 align="center" class="Text-teory2">6. Береги себя</h5></p>
+                        <p><h6 align="left" class="Text-teory3">Сделай паузу, если чувствуешь, что сбиваешься и делаешь много ошибок. Небольшой перерыв вернет силы и внимательность.</h6></p>
+                    </div>
+                </div>
+
+                <div class="Btn">
+                    <a style="text-align:center" href="Lavels.html" class="btn btn-primary-last">Вперед!</a>
+                </div>
+
+            </div>
+        </div>
+    </main>            
+</body>
+</html>
